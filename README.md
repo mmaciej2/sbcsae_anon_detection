@@ -1,5 +1,5 @@
 ## TL;DR
-The `anonymized.uem` file contains algorithmically-detected time marks for the filtered regions of the Santa Barbara Corpus of Spoken American English (SBCSAE), in NIST's UEM format for diarization evaluation.
+The `scored.uem` file contains algorithmically-detected time marks for the scored (non-filtered) regions of the Santa Barbara Corpus of Spoken American English (SBCSAE), in NIST's UEM format for diarization evaluation.
 
 ## Overview
 The Santa Barbara Corpus of Spoken American English (SBCSAE) had a low-pass filter applied to regions containing personal information of the participants, while maintaining pitch information ([details here](https://www.linguistics.ucsb.edu/research/santa-barbara-corpus#Recordings)). Though the documentation refers to filter list files containing these regions, they do not appear to be available anywhere that the corpus is hosted. This repo contains an attempt to reconstruct this information via detection of the regions where the filter was applied, so that those regions can be omitted from scoring of technology that might be unfairly negatively impacted by the filtering.
